@@ -3,4 +3,11 @@
     padding: 1em;
     box-shadow: var(--box-shadow);
     border-radius: .3em;
+    display: flex;
+    justify-content: space-between;
+}
+.menuContainer{
+    display: flex;
+    align-items: center;
+    gap: .5em;;
 }
