@@ -7,22 +7,19 @@ import Link from "next/link";
 export default function Home(data) {
   // console.log(data)
   const {dir} = useSelector(state=>state.global)
-  const { t,i18n } = useTranslation('mainPage');
+  const { t,i18n } = useTranslation('about');
   const dispatch = useDispatch();
   return (
     <div dir={dir}>
-      <h3>{t('home')}</h3>
-
+      <h3>{t('title')}</h3>
     </div>
   );
 }
 
 export async function getStaticProps(ctx) {
-  console.log(ctx.locale)
   return {
     props: {
-      // ...ctx.lang
-      ...(await serverSideTranslations(ctx.locale, ['common','mainPage'])),
+      ...(await serverSideTranslations(ctx.locale, ['about'])),
     },
   };
 }

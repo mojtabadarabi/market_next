@@ -5,6 +5,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   i18n,
+  env: {
+    defaultLang: 'fa',
+  },
 }
 
 module.exports = nextConfig
