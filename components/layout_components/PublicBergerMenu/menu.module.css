@@ -1,0 +1,13 @@
+.container{
+    background: #fff;
+    border-radius: .2em;
+    width: 20em !important;
+    padding: .5em;
+}
+.menu{
+
+}
+.menu svg{
+    width: 2em;
+    height: 2em;
+}

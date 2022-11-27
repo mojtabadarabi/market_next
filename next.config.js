@@ -8,6 +8,7 @@ const nextConfig = {
   env: {
     defaultLang: 'fa',
   },
+
 }
 
 module.exports = nextConfig
